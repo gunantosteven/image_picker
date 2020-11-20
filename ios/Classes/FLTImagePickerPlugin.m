@@ -51,8 +51,7 @@ static const int SOURCE_GALLERY = 1;
     }
   }
 
-  UINavigationController *rootViewController = windowToUse.rootViewController;
-  UIViewController *topController = (UIViewController*)[rootViewController.viewControllers objectAtIndex:0];
+  UIViewController *topController = windowToUse.rootViewController;
   while (topController.presentedViewController) {
     topController = topController.presentedViewController;
   }
