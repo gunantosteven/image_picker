@@ -69,7 +69,7 @@ static const int SOURCE_GALLERY = 1;
 
   if ([@"pickImage" isEqualToString:call.method]) {
     _imagePickerController = [[UIImagePickerController alloc] init];
-    _imagePickerController.modalPresentationStyle = UIModalPresentationCurrentContext;
+    _imagePickerController.modalPresentationStyle = UIModalPresentationOverCurrentContext;
     _imagePickerController.delegate = self;
     _imagePickerController.mediaTypes = @[ (NSString *)kUTTypeImage ];
 
